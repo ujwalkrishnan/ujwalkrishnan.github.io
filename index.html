@@ -1,167 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <title>Personal Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Landing Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<script src="index.js"></script>
-  <header class="header">
-    <div class="logo">
-      <a href="#main">Portfolio</a>
-    </div>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Service</a></li>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#" id="contact">Contacts</a></li>
-    </ul>
+    
+    <div class="overlay first"></div>
+    <div class="overlay second"></div>
+    <div class="overlay third"></div>
 
-    <div class="menu-icon">
-      <ion-icon name="menu-outline" class="menu-btn"></ion-icon>
-      <ion-icon name="close-outline" class="remove-btn"></ion-icon>
-    </div>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav-logo">Newcastle upon Tyne <span> UK</span></a>
+            </div>
 
-  </header>
+            <!-- <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div> -->
 
-  <main>
-    <section class="main-section" id="main">
-      <div class="side text-sec">
-        <h2>Hi, i'm <span>Amol Kamble</span></h2>
-        <div class="dots">
-          <span></span><span></span><span></span><span></span><span></span><span></span> <span></span>
+            <div class="nav-toggle" id="nav-toggle">
+                <ion-icon name="menu"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-grid">
+        <div class="home">
+            <div class="home-information">
+                <span class="home-pressent anime-text">Hello, My name is</span>
+                <h1 class="home-title anime-text">Ujwal Krishnan</h1>
+                <span class="home-skill anime-text">Digital marketer</span>
+
+                <div>
+                    <a href="#" class="home-button anime-text">DOWNLOAD CV</a>
+                </div>
+            </div>
+
+            <div class="home-img">
+                <img src="ujwal.png" alt="image">
+            </div>
+
+            <div class="home-social">
+                <ion-icon name="logo-facebook" class="home-social-icon"></ion-icon>
+                <ion-icon name="logo-instagram" class="home-social-icon"></ion-icon>
+                <ion-icon name="logo-twitter" class="home-social-icon"></ion-icon>
+            </div>
         </div>
-        <h1>Innotive Software Solutions to <br> Build a Connected <span>{World}</span></h1>
-        <p>I am a passionate and innovative technology enthusiast, freshly embarking on an exciting journey in the tech world. My academic background and hands-on projects reflect a commitment to learning and applying the latest technological advancements. Dive into my portfolio to discover a blend of creativity, technical skills, and a fresh perspective that aims to contribute to the ever-evolving digital landscape. Let’s explore the possibilities together!</p>
-        <div class="link-btns">
-          <a href="#">About Me</a>
-          <a href="#">Let's talk <span class="material-symbols-outlined" id="arrow">
-              arrow_forward
-            </span></a>
-        </div>
-      </div>
-      <div class="social-links">
-        <a href="#">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a>
-        <a href="#">
-          <ion-icon name="logo-facebook"></ion-icon>
-        </a>
-        <a href="#">
-          <ion-icon name="logo-twitter"></ion-icon>
-        </a>
-        <a href="#">
-          <ion-icon name="logo-whatsapp"></ion-icon>
-        </a>
-        <a href="#">
-          <ion-icon name="logo-youtube"></ion-icon>
-        </a>
-      </div>
-    </section>
+    </main>
 
-    <section class="product-container" id="project">
-      <h2>Projects</h2>
-      <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi officia nobis consectetur eligendi nemo. Ducimus molestias esse expedita consectetur voluptatem.</p> -->
-      <p>As a fresh technology student, I’ve had the opportunity to work on a variety of projects that have allowed me to apply theoretical knowledge in practical settings. Here are some highlights.</p>
-      <div class="services">
-        <div class="product" id="product1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
-          <div class="card-image">
-            <span class="card-title">Mobile App Development</span>
+    <script src="main.js"></script>
 
-            <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-          </div>
-
-          <div class="card-text">
-            <p>
-              Developed a cross-platform productivity app with React Native, featuring task management and progress tracking. <a href="#" title="Read Full"><span>Read Full</span></a> </p>
-
-          </div>
-
-        </div>
-
-        <div class="product" id="product2">
-          <div class="card-image">
-            <span class="card-title">Data Analysis</span>
-
-            <img src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-          </div>
-
-          <div class="card-text">
-            <p>
-              Conducted a data analysis project using Python, where I analyzed social media trends and presented insights through visualizations. <a href="#" title="Read Full"><span>Read Full</span></a> </p>
-
-          </div>
-        </div>
-        <div class="product" id="product3">
-          <div class="card-image">
-            <span class="card-title">Machine Learning</span>
-            <img src="https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-          </div>
-
-          <div class="card-text">
-            <p>
-              Implemented a basic machine learning model to predict stock market trends based on historical data, using Python’s scikit-learn library. <a href="#" title="Read Full"><span>Read Full</span></a> </p>
-
-          </div>
-        </div>
-        <div class="product" id="product4">
-          <div class="card-image">
-            <span class="card-title">Web Development</span>
-            <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-          </div>
-
-          <div class="card-text">
-            <p>
-              Created a responsive personal blog using HTML, CSS, and JavaScript, focusing on a clean design and user-friendly navigation. <a href="#" title="Read Full"><span>Read Full</span></a> </p>
-
-          </div>
-        </div>
-        <div class="product" id="product5">
-          <div class="card-image">
-            <span class="card-title">Internet of Things (IoT) </span>
-            <img src="https://www.successknocks.com/wp-content/uploads/2021/06/IOT2.jpg" alt="">
-          </div>
-
-          <div class="card-text">
-            <p>
-              Built a smart home system prototype that allows remote monitoring and control of home appliances via a web interface. <a href="#" title="Read Full"><span>Read Full</span></a> </p>
-
-          </div>
-        </div>
-        <div class="product" id="product6">
-          <div class="card-image">
-            <span class="card-title">Free space</span>
-            <img src="https://images.pexels.com/photos/1181622/pexels-photo-1181622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-          </div>
-
-          <div class="card-text">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Image by psum is simply dummy text <a href="#" title="Read Full"><span>Read Full</span></a> </p>
-
-          </div>
-        </div>
-        <div class="product" id="product7"></div>
-        <div class="product" id="product8"></div>
-      </div>
-    </section>
-
-  </main>
-  <div class="scroll-progress">0%</div>
-  <div class="topLeft circle"></div>
-  <div class="bottomRight circle"></div>
-
-  <script src="app.js"></script>
-
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
-
+<script src="index.js"></script>
 </html>
